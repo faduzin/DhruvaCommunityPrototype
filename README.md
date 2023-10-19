@@ -1,2 +1,2 @@
-# DhruvaCommunityProthotype
+# DhruvaCommunityPrototype
 Practice html programming
