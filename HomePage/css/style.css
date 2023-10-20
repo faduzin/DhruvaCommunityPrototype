@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 1920px;
+    font-family: Montserrat, monospace;
+}
+
+.html, .body
+{
+    width: 100%;
+    height: 100%;
+}
+
+body h1
+{
+    color: white;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.upper-page
+{
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    background-image: url("../images/upper.png");
+}
+
+.header
+{
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+}
+
+.logo
+{
+    position: absolute;
+    top: 49px;
+    left: 162px;
+    width: 225px;
+    height: 59px;
+    float: left;
+}
+
+.logo > h1
+{
+    width: 225px;
+    height: 58px;
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.logo > h3
+{
+    position: relative;
+    top: -16px;
+    width: 226px;
+    height: 24px;
+    color: white;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttons
+{
+    position: absolute;
+    right: 174px;
+    top: 68px;
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-button
+{
+    margin-left: 30px;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 120px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.signup-button:hover
+{
+    color: black;
+    background-color: white;
+}
+
+.about-button,
+.quiz-button,
+.discovery-button
+{
+    margin: 0 30px;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 120px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.about-button:hover,
+.quiz-button:hover,
+.discovery-button:hover
+{
+    color: black;
+    background-color: white;
+}
+
+.about-button:disabled,
+.quiz-button:disabled,
+.discovery-button:disabled
+{
+    color: #00A3FF;
+    background-color: transparent;
+}
+
+.social
+{
+    position: fixed;
+    bottom: 72px;
+    left: 131px;
+    width: 28px;
+    height: 146px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.social > img
+{
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+    margin-top: 31px;
+}
+
+.social > img:first-child
+{
+    margin-top: 0;
+}
+
+.scroll-instruction
+{
+    position: fixed;
+    bottom: 72px;
+    right: 79px;
+    width: 29px;
+    height: 167px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+
+.scroll-instruction > h3
+{
+    transform: rotate(90deg);
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 75px; /* 535.714% */
+    letter-spacing: 5.6px;
+    margin-bottom: 45px;
+}
+
+.scroll-instruction > img
+{
+    height: 51px;
+    flex-shrink: 0;
+}
+
+.container-1
+{
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1 h1
+{
+    color: #FFF;
+    text-align: center;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.subcontainer h2{
+    color: rgba(255, 255, 255, 0.80);
+    text-align: left;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 18px 0;
+}
+
+.subcontainer{
+    width: 315px;
+    height: 444px;
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 10px;
+}
+
+.subcontainer-carousel
+{
+    /*animation: scroll 10s linear infinite;*/
+}
+
+
+@keyframes scroll
+{
+    0%, 25% {
+        transform: translateY(0);
+    }
+    33%, 58% {
+        transform: translateY(-100%);
+    }
+    66%, 91% {
+        transform: translateY(-200%);
+    }
+}
+
+
+
+.middle-page
+{
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    background-image: url("../images/middle.png");
+}
+
+
+
+
+
+
+
+
+.bottom-page
+{
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    background-image: url("../images/bottom.png");
+}
