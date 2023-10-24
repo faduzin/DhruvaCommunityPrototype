@@ -11,7 +11,6 @@
 
 .html, .body
 {
-    width: 100%;
     height: 100%;
 }
 
@@ -30,30 +29,33 @@ body h1
     width: 100%;
     height: 1080px;
     background-image: url("../images/upper.png");
+    background-position: center;
 }
 
 .header
 {
     position: fixed;
     width: 100%;
-    height: 150px;
+    height: auto;
     z-index: 1;
+}
+
+.container-header{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    padding: 2%;
 }
 
 .logo
 {
-    position: absolute;
-    top: 49px;
-    left: 162px;
-    width: 225px;
-    height: 59px;
+    padding: 2%;
     float: left;
 }
 
 .logo > h1
 {
     width: 225px;
-    height: 58px;
     color: #FFF;
     text-align: center;
     font-size: 48px;
@@ -63,28 +65,27 @@ body h1
 }
 
 .logo > h3
-{
-    position: relative;
-    top: -16px;
-    width: 226px;
+{ 
+    margin-top: -10px;
+    text-align: center;
+    width: 225px;
     height: 24px;
     color: white;
-    font-size: 23px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
 .buttons
-{
-    position: absolute;
-    right: 174px;
-    top: 68px;
-    height: 50px;
+{   
+    float: right;
+    margin-top: 3%;
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .signup-button
@@ -206,10 +207,8 @@ body h1
 
 .container-1
 {
-    position: absolute;
-    top: -100px;
+    padding-top: 10%;
     width: 100%;
-    height: 1080px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,38 +265,47 @@ body h1
 
 .middle-page
 {
-    position: relative;
     width: 100%;
     height: 1080px;
     background-image: url("../images/middle.png");
+    background-position: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container-2{
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .container-post
 {
-    width: 400px;
-    height: 493px;
+    width: 33.3333%;
+    padding: 2%;
+}
+
+.container-text{
+    width: 100%;
+    height: 150px;
 }
 
 .post
 {
-    width: 400px;
-    height: 400px;
-    background-color: #D9D9D9;
-    text-align: center;
-
+    padding-bottom: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.post img
-{
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    object-position: center;
-    text-align: center;
-}
+.p1{background-image: url(../images/starfusion.jpg);}
+.p2{background-image: url(../images/spaceatlas.jpg);}
+.p3{background-image: url(../images/newmineral.jpg);}
 
 .container-post h4, h5
 {
@@ -309,22 +317,16 @@ body h1
 }
 
 .container-post h4
-{
-    margin-top: 30px;
-    font-size: 23px;
+{   
+    padding: 2%;
+    font-size: 200%;
 }
 
 .container-post h5
 {
-    margin-top: 11px;
-    font-size: 20px;
+    padding: 2%;
+    font-size: 130%;
 }
-
-.container-post:nth-child(2)
-{
-    margin: 0 192px;
-}
-
 
 
 
@@ -338,4 +340,50 @@ body h1
     width: 100%;
     height: 1080px;
     background-image: url("../images/bottom.png");
+    background-position: center;
+}
+
+.clear{clear: both;}
+
+@media (max-width:1080px) {
+    .container-post{
+        width: 40%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .header{width: 100%; text-align: center;}
+    .logo{
+        float: none;
+        display: inline-block;
+        text-align: center;
+        width: fit-content;
+        height: auto;
+    }
+    .buttons{
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 0 auto;
+        display: block;
+        scale: 0.7;
+    }
+    .buttons > button{
+        margin: 0;
+    }
+    .container-1{
+        scale: 0.55;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-1{
+        scale: 0.4;
+    }
+}
+
+@media (max-width: 510px) {
+    .container-1{
+        scale: 0.3;
+    }
 }

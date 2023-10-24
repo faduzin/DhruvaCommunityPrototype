@@ -10,16 +10,19 @@
     <body>
     <script src="javascript/script.js"></script>
         <div class="header">
-            <div class="logo" onclick="getLogoClick()">
-                <h1>DHRUVA</h1>
-                <h3>ASTRONOMY CLUB</h3>
+            <div class="container-header">
+                <div class="logo" onclick="getLogoClick()">
+                    <h1>DHRUVA</h1>
+                    <h3>ASTRONOMY CLUB</h3>
+                </div>
+                <div class="buttons">
+                    <button class="discovery-button" id="id-discoveryButton" onclick="getDiscoverButton()">Discover</button>
+                    <button class="quiz-button">Quiz</button>
+                    <button class="about-button" id="id-aboutButton" onclick="getAboutButton()">About</button>
+                    <button class="signup-button">Sign Up</button>
+                </div><!--buttons-->
+                <div class="clear"></div>
             </div>
-            <div class="buttons">
-                <button class="discovery-button" id="id-discoveryButton" onclick="getDiscoverButton()">Discover</button>
-                <button class="quiz-button">Quiz</button>
-                <button class="about-button" id="id-aboutButton" onclick="getAboutButton()">About</button>
-                <button class="signup-button">Sign Up</button>
-            </div><!--buttons-->
         </div><!--header-->
         <div class="social">
             <img src="images/Facebook.svg" alt="Facebook-logo">
@@ -48,21 +51,29 @@
         </div><!--upper-page-->
 
         <div class="middle-page">
-            <div class="container-post">
-                <div class="post"><img src="images/starfusion.jpg" alt="starfusion"></div>
-                <h4>Star Fusion</h4>
-                <h5>Tridimensional simulation of a detailed fusion between two neutron stars.</h5>
-            </div><!--container-post-->
-            <div class="container-post">
-                <div class="post"><img src="images/spaceatlas.jpg" alt="spaceatlas"></div>
-                <h4>Space Atlas</h4>
-                <h5>Never seen digital atlas with 400 thousand galaxies.</h5>
-            </div><!--container-post-->
-            <div class="container-post">
-                <div class="post"><img src="images/newmineral.jpg" alt="newmineral"></div>
-                <h4>New Mineral</h4>
-                <h5>Recently discovered mineral by China.</h5>
-            </div><!--container-post-->
+            <div class="container-2">
+                <div class="container-post">
+                    <div class="post p1"></div>
+                    <div class="container-text">
+                        <h4>Star Fusion</h4>
+                        <h5>Tridimensional simulation of a detailed fusion between two neutron stars.</h5>
+                    </div>
+                </div><!--container-post-->
+                <div class="container-post">
+                    <div class="post p2"></div>
+                    <div class="container-text">
+                        <h4>Space Atlas</h4>
+                        <h5>Never seen digital atlas with 400 thousand galaxies.</h5>
+                    </div>
+                    </div><!--container-post-->
+                <div class="container-post">
+                    <div class="post p3"></div>
+                    <div class="container-text">
+                        <h4>New Mineral</h4>
+                        <h5>Recently discovered mineral by China.</h5>
+                    </div>
+                    </div><!--container-post-->
+            </div>
         </div><!--middle-page-->
 
         <div class="bottom-page">
