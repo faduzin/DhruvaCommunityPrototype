@@ -30,6 +30,7 @@ body h1
     height: 100vh;
     background-image: url("../images/upper.png");
     background-position: center;
+    background-size: cover;
 }
 
 .header
@@ -262,13 +263,13 @@ body h1
 .middle-page
 {
     width: 100%;
-    height: 1080px;
+    height: 100vh;
     background-image: url("../images/middle.png");
     background-position: center;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
+    background-size: cover;
+    top: 100vh;
+    position: absolute;
+    z-index: -1;
 }
 
 .container-2{
@@ -314,14 +315,14 @@ body h1
 
 .container-post h4
 {   
-    padding: 2%;
-    font-size: 200%;
+    padding: 2vw;
+    font-size: clamp(20px, 3vw, 40px);
 }
 
 .container-post h5
 {
-    padding: 2%;
-    font-size: 130%;
+    padding: 2vw;
+    font-size: clamp(10px, 2vw, 20px);
 }
 
 
@@ -332,20 +333,17 @@ body h1
 
 .bottom-page
 {
-    position: relative;
+    position: absolute;
+    top: 200vh;
     width: 100%;
-    height: 1080px;
+    height: calc(100vh + 100%);
     background-image: url("../images/bottom.png");
     background-position: center;
+    background-size: cover;
+    z-index: -1;
 }
 
 .clear{clear: both;}
-
-@media (max-width:1080px) {
-    .container-post{
-        width: 40%;
-    }
-}
 
 @media (max-width: 1300px) {
     .header{width: 100%; text-align: center;}
@@ -370,5 +368,37 @@ body h1
     .container-1{
         padding-top: 20vh;
         flex-direction: column;
+    }
+    .text1{
+        padding-right: 30vw;
+    }
+    .text2{
+        padding-left: 30vw;
+    }
+}
+
+@media (max-width:1080px) {
+    .container-post{
+        width: 40%;
+    }
+    
+}
+
+@media (max-width:710px){
+    .container-post{
+        width: 55vw;
+    }
+    .social{
+        left: 3vw;
+    }
+    .scroll-instruction{
+        right: 3vw;
+    }
+}
+
+@media (max-width:830px) {
+    .text1,
+    .text2{
+        padding: 0;
     }
 }
